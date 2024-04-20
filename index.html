@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz Application</title>
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="main_div">
+      <section class="details">
+         <section class="img">
+            <img src="img/ask.png" alt="">
+         </section>
+         <section>
+            <h1 class="heading">quiz application with fixed timer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolore accusantium eum, quisquam
+               ipsa
+               praesentium soluta facilis facere! Sapiente natus magnam maxime asperiores labore facilis, in eaque qui
+               velit nesciunt.</p>
+         </section>
+         <section class="btn_box">
+            <button class="btn" id="start">start quiz</button>
+         </section>
+
+      </section>
+
+      <div class="Rules">
+         <section class="img">
+            <img src="img/ask.png" alt="">
+         </section>
+         <section>
+            <h1 class="heading">Some Rules Of Quiz</h1>
+            <hr>
+            <ol>
+               <li>You will have only 15 seconds per each question.</li>
+               <li>You can't select any option once time goes off.</li>
+               <li>You can't exit from the Quiz while you're playing.</li>
+               <li>You'll get points on the basis of your correct answers.</li>
+            </ol>
+         </section>
+         <section class="btn_box2">
+            <button class="btn" id="exit"> Exit Quiz</button>
+            <button class="btn" id="continue">Continue </button>
+         </section>
+      </div>
+
+      <!-- questions -->
+      <div id="questions">
+         <section class="time">
+            <h4>Time off <span>10</span></h4>
+         </section>
+
+         <section class="time_line"></section>
+
+         <section class="answers_box">
+            <h2 id="questionHeading">1. quetions</h2>
+
+            <section class="answers">
+               <aside>
+                  <p>anwser1</p>
+                  <p>anwser1</p>
+               </aside>
+
+               <aside>
+                  <p>anwser1</p>
+                  <p>anwser1</p>
+
+               </aside>
+            </section>
+         </section>
+
+         <section class="quetions_box">
+            <section class="btn_box2">
+               <p class="outOff">1 out of 4</p>
+               <button class="btn" id="nextQuiz">Next Qui...</button>
+            </section>
+         </section>
+      </div>
+   </div>
+
+   <div id="result">
+      <section class="img">
+         <img src="img/winner.svg" alt="">
+      </section>
+      <section>
+         <h1 class="heading">Thank You For Your Participate</h1>
+         <h2 id="scoreText"></h2>
+      </section>
+      <section class="quetions_box">
+         <section class="btn_box2">
+            <button class="btn" id="replay">Replay</button>
+            <button class="btn" id="Quit">Quit Quiz</button>
+         </section>
+      </section>
+   </div>
+
+   <script src="js/app.js"></script>
+</body>
+
+</html>
